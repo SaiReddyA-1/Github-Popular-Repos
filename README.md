@@ -40,7 +40,7 @@ In this project, I have completed the **Github Popular Repos** application by ap
 ### Completion Instructions
 
 <details>
-<summary>Functionality to be added</summary>
+<summary>Functionality added</summary>
 <br/>
 
 The app has the following functionalities:
