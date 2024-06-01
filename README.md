@@ -1,31 +1,32 @@
-In this project, let's build a **Github Popular Repos** by applying the concepts we have learned till now.
+# Github Popular Repos
+
+In this project, I have completed the **Github Popular Repos** application by applying the concepts learned so far.
 
 ### Refer to the images below:
 
- <br/>
- <div style="text-align: center;">
-     <img src="https://assets.ccbp.in/frontend/content/react-js/github-popular-repos-output.gif" alt="github popular repos output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
- </div>
- <br/>
+![Github Popular Repos Output](https://assets.ccbp.in/frontend/content/react-js/github-popular-repos-output.gif)
 
 **Failure View**
 
- <div style="text-align: center;">
-     <img src="https://assets.ccbp.in/frontend/content/react-js/github-popular-repos-error-view-output.gif" alt="github popular repos failure view output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
- </div>
- <br/>
+![Github Popular Repos Failure View](https://assets.ccbp.in/frontend/content/react-js/github-popular-repos-error-view-output.gif)
 
 ### Design Files
 
-<details>
-<summary>Click to view</summary>
-
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/github-repos-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Success](https://assets.ccbp.in/frontend/content/react-js/github-repos-lg-success-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Loading](https://assets.ccbp.in/frontend/content/react-js/github-repos-lg-loading-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Failure](https://assets.ccbp.in/frontend/content/react-js/github-repos-error-view-lg-output.png)
-
-</details>
+- Extra Small (Size < 576px) and Small (Size >= 576px)
+  
+  ![Small Design](https://assets.ccbp.in/frontend/content/react-js/github-repos-sm-outputs.png)
+  
+- Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Success
+  
+  ![Medium Success Design](https://assets.ccbp.in/frontend/content/react-js/github-repos-lg-success-output.png)
+  
+- Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Loading
+  
+  ![Medium Loading Design](https://assets.ccbp.in/frontend/content/react-js/github-repos-lg-loading-output.png)
+  
+- Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Failure
+  
+  ![Medium Failure Design](https://assets.ccbp.in/frontend/content/react-js/github-repos-error-view-lg-output.png)
 
 ### Set Up Instructions
 
@@ -42,21 +43,21 @@ In this project, let's build a **Github Popular Repos** by applying the concepts
 <summary>Functionality to be added</summary>
 <br/>
 
-The app must have the following functionalities
+The app has the following functionalities:
 
-- When the app is opened initially,
+- When the app is opened initially:
 
-  - An HTTP GET request should be made to **githubReposApiUrl** with query parameter as `language` and its initial value as `ALL`
-  - **_loader_** should be displayed while fetching the data
-  - After the data is fetched successfully, display the repositories list received in the response
+  - An HTTP GET request is made to **githubReposApiUrl** with query parameter as `language` and its initial value as `ALL`
+  - **_loader_** is displayed while fetching the data
+  - After the data is fetched successfully, the repositories list received in the response is displayed
 
-- When a language filter is active
+- When a language filter is active:
 
-  - An HTTP GET request should be made to the above-mentioned URL with the `id` of the active language
-  - **_loader_** should be displayed while fetching the data
-  - After the data is fetched successfully, display the repositories list received in the response
+  - An HTTP GET request is made to the above-mentioned URL with the `id` of the active language
+  - **_loader_** is displayed while fetching the data
+  - After the data is fetched successfully, the repositories list received in the response is displayed
 
-- The `GithubPopularRepos` component is provided with `languageFiltersData`. It consists of a list of language filter objects with the following properties in each language filter object
+- The `GithubPopularRepos` component is provided with `languageFiltersData`. It consists of a list of language filter objects with the following properties in each language filter object:
 
   |   Key    | Data Type |
   | :------: | :-------: |
@@ -117,7 +118,7 @@ Returns a response containing the list of repositories
 <summary>Implementation Files</summary>
 <br/>
 
-Use these files to complete the implementation:
+The following files were used to complete the implementation:
 
 - `src/components/GithubPopularRepos/index.js`
 - `src/components/GithubPopularRepos/index.css`
@@ -133,7 +134,7 @@ Use these files to complete the implementation:
 <summary>Click to view</summary>
 <br>
 
-- To display the animated loader, we need to import the `Loader` component using the below statement
+- To display the animated loader, we need to import the `Loader` component using the below statement:
 
   ```jsx
   import Loader from 'react-loader-spinner'
@@ -155,7 +156,7 @@ Use these files to complete the implementation:
 
 <br/>
 
-**The following instructions are required for the tests to pass**
+**The following instructions are required for the tests to pass:**
 
 - Wrap the `Loader` component with an HTML container element and add the `data-testid` attribute value as **loader** to it
 
@@ -200,10 +201,3 @@ Use these files to complete the implementation:
 - Lobster
 
 </details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
